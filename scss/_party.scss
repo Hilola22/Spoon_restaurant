@@ -1,0 +1,134 @@
+.party {
+  width: 100%;
+  &-wrapper {
+    padding: 150px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text {
+      max-width: 483px;
+      width: 100%;
+      h2 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: "Libre Franklin", sans-serif;
+        color: #5ab963;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        div{
+          width: 30px;
+          height: 2px;
+          background: #5AB963;
+        }
+      }
+      p {
+        font-size: 24px;
+        font-weight: 100;
+        line-height: 36px;
+        font-family: "Libre Franklin", sans-serif;
+      }
+      b {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        font-family: "Libre Franklin", sans-serif;
+      }
+    }
+    &__btn {
+      button {
+        padding: 15px 30px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        background: #5ab963;
+        color: white;
+        &:hover {
+          background: rgb(37, 132, 32);
+          color: #ffffff;
+        }
+        &:active {
+          background: #5ab963;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .party-wrapper {
+    padding: 100px 0;
+    gap: 40px;
+
+    &__text {
+      h2 {
+        font-size: 14px;
+      }
+
+      p, b {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    &__btn button {
+      font-size: 14px;
+      padding: 12px 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .party-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 80px 0;
+
+    &__text {
+      max-width: 100%;
+
+      h2 {
+        justify-content: center;
+      }
+
+      p, b {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+
+    &__btn button {
+      width: 100%;
+      font-size: 14px;
+      padding: 12px 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .party-wrapper {
+    padding: 60px 0;
+    gap: 20px;
+
+    &__text {
+      h2 {
+        font-size: 13px;
+      }
+
+      p, b {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &__btn button {
+      font-size: 13px;
+      padding: 10px 18px;
+    }
+  }
+}
